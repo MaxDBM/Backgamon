@@ -29,6 +29,14 @@ class Board:
 		self.blackPieceLocations[23] = 2
 
 	# methods
+
+	# set the self.dice touple to two random numbers between 1 and 6
+	def rollDice(self):
+		# TODO: implement dice rolling
+
+		
+		return # nothing
+
 	# print the board
 	def printBoard(self):
 		print("Black: ", end="")
