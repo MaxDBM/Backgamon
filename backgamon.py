@@ -17,3 +17,8 @@ from board import Board
 
 myBoard = Board()
 myBoard.printBoard()
+print(myBoard.dice)
+myBoard.rollDice()
+print(myBoard.dice)
+
+

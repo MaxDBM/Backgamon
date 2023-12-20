@@ -1,3 +1,4 @@
+import random
 # Board Class
 # Stores the board state and provides methods to manipulate it
 class Board:
@@ -11,7 +12,7 @@ class Board:
 	whiteJail = 0
 
 	# Dice number
-	dice = (1, 1)
+	dice = [1, 1]
 
 	# Store who's turn it is
 	isBlackTurn = False
@@ -32,10 +33,9 @@ class Board:
 
 	# set the self.dice touple to two random numbers between 1 and 6
 	def rollDice(self):
-		# TODO: implement dice rolling
-
-		
-		return # nothing
+		# implement dice rolling
+		self.dice[0] = random.randint(1,6)
+		self.dice[1] = random.randint(1,6)
 
 	# print the board
 	def printBoard(self):
